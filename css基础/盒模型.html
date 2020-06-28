@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒模型</title>
+</head>
+<body>
+    倾向于项目和开发者的习惯，并没有绝对的好坏之分
+    <br/>
+    <br/>
+    <div>W3C的标准盒模型: width指content部分的宽度</div>
+    <div style="color: red;">IE的盒模型: width表示content+padding+border这三个部分的宽度</div>
+    <br/>
+
+    <b>box-sizing的使用:</b>
+    <p>content-box 是W3C盒子模型</p>
+    <p>border-box 是IE盒子模型</p>
+
+    <br/>
+    <br/>        
+    <div>关于：border-box 它的 width 和 height 属性包括内容，内边距和边框，但不包括外边距。
+        这里的维度计算为： <em>width = border + padding + 内容的  width， height = border + padding + 内容的 height</em>。
+        <br/>
+        <br/>        
+        <b>应用:</b>一般在写页面的时候用这个属性就不会再考虑边框和内边距会改变整体所占宽度，即不用再根据盒子模型再去计算，省去很多麻烦，一般在做自适应的网页设计的时候用，用这个属性网页结构才不会被破坏。（盒模型原理）。
+    </div>
+    <img width="1000px" src="../img/标准盒模型.png"/>
+    <img width="400px" src="../img/IE盒模型.png"/>
+</body>
+</html>
