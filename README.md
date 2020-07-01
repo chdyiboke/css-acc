@@ -15,10 +15,10 @@ CSS（success）results from accumulation
 
 ## 基础
 
-* 盒模型
-* BFC
-* 选择器
-* 内容生成
+* 盒模型-done
+* BFC-done
+* 选择器-done
+* 内容生成-done
 * 层叠
 * 单位&百分数
 * 颜色
