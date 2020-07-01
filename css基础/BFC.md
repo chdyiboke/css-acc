@@ -26,7 +26,7 @@ BFC就是页面上的一个隔离的独立容器，容器里面的子元素不�
 
 
 ## BFC的作用
-1.利用BFC避免margin重叠。
+1.利用BFC避免margin重叠。`上下外边距塌陷`
 
 <!DOCTYPE html>
 <html lang="en">
