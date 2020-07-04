@@ -5,35 +5,96 @@ img
 {
     float:left
 }
+.text-fun
+{
+float:left;
+width:155px;
+margin:0 0 15px 20px;
+padding:15px;
+border:1px solid black;
+text-align:center;
+}
+span
+{
+float:left;
+width:0.7em;
+font-size:400%;
+font-family:algerian,courier;
+line-height:80%;
+}
+
+.clearfix {
+    border: 5px solid rgb(91, 243, 30);
+    width: 300px;
+
+    /* overflow: hidden; BFC 重点 */
+}
+
+.clearfix:before,.clearfix:after { 
+    content:".";
+    display:table; /* 双伪元素 重点 */
+}
+.clearfix:after {
+    clear:both;/* 双伪元素 重点 */
+}
+.clearfix {
+    *zoom:1;
+}
+.child {
+    border: 5px solid rgb(233, 250, 84);
+    width:100px;
+    height: 100px;
+    float: left;
+}
 </style>
 </head>
 
 <body>
-    <h1>使图像浮动于一个段落的左侧</h1>
+    <div>
+<h1>使图像浮动于一个段落的左侧</h1>
 <p>在下面的段落中，我们添加了一个样式为 <b>float:right</b> 的图像。结果是这个图像会浮动到段落的右侧。</p>
 <p>
 <img src="./../img/标准盒模型.png" style='width:150px;' />
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
+This is some text.<br />
+This is some text.<br /> 
+This is some text.<br />
+This is some text.<br />
+This is some text.<br /> 
+This is some text.<br />
 </p>
+</div>
+
+<div>
+    <h1>添加边框和内边距/推离文本</h1>
+    <div class="text-fun">
+        <img src="./../img/标准盒模型.png" style='width:150px;' />
+        CSS is fun!
+        </div>
+    <p>
+    This is some text.<br />
+    This is some text.<br /> 
+    This is some text.
+    </p>
+</div>
+<div style="margin-top: 150px;">
+    <h1>首字母浮动左侧</h1>
+    <p>
+        <span>T</span>his is some text.<br />
+        This is some text. This is some text.
+    </p>
+</div>
+
+<div>
+    <h1>双伪元素清除浮动</h1>
+    <div class="clearfix">
+
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</div>
+
+
+
 </body>
 
 </html>
