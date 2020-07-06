@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
+<title>position</title> 
 <style>
 div.sticky {
   position: -webkit-sticky;
@@ -16,6 +16,7 @@ h2.pos_top
 {
 	position:relative;
 	top:-40px;
+    border: 1px solid red;
 }
 .pos_absolute{
     top: 60px;
@@ -39,7 +40,13 @@ h2.pos_top
   <p>滚动我</p>
   <p>来回滚动我</p>
   <h2>这是一个没有定位的标题</h2>
-  <h2 class="pos_top">这个标题是根据其正常位置向上移动<div class="pos_absolute">相对定位元素经常被用来作为绝对定位元素的`容器块`</div></h2>
+
+  <h2 class="pos_top">这个标题是根据其正常位置向上移动
+    <!-- <img src="./../img/标准盒模型.png" style='width:150px;z-index: -1;' /> -->
+      <div class="pos_absolute">
+          相对定位 元素经常被用来作为 绝对定位元素的`容器块`
+        </div>
+    </h2>
   <p><b>注意:</b> 即使相对定位元素的内容是移动,预留空间的元素仍保存在正常流动。</p>
 </div>
 
