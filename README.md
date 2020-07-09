@@ -30,7 +30,7 @@ CSS（success）results from accumulation
 * 边框
 * 文本属性- 字体- 垂直对齐
 * 背景
-* 变形、过渡、动画
+* 变形-过渡-动画
 * 媒体查询
 
 
